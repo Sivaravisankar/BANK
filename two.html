@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+     
+        }
+        html{
+            background-image: url(./img/img6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            background-color: rgb(44, 79, 220);
+            height: 100px;
+        }
+        h2{
+            font-size: 30px;
+            color: white;
+        }
+        nav .logo h1 {
+            font-size: 39px;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: rgb(221, 239, 19);
+            font-size: 25px;
+            transition: color 0.3s ease;
+        }
+
+        nav .nav-links a:hover {
+            color: #2b27ad;
+        }
+        input{
+        height: 50px;
+           width: 35em;
+           background-color: beige;
+       }    
+       form{
+        padding-left: 250px;
+       }
+       h1{
+        color: beige;
+        margin-top: 130px;
+        margin-bottom: 50px;
+        font-size: 40px;
+       }
+       ::placeholder{
+        font-size: 20px;
+       }
+       #button{
+        margin-top: 40px;
+        margin-right: 20px;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>KRS bank</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./one.html">Create account</a></li>
+            <li><a href="./two.html">Deposit</a></li>
+            <li><a href="./three.html">Withdraw</a></li>
+            <li><a href="./five.html">Sign In</a></li>
+        </ul>
+    </nav>
+    <div>
+        <form>
+            <h1>CASH DEPOSIT</h1>
+            <div>
+                <label for="acc-no"></label>
+                <input type="text" id="deposit" name="acc-no" placeholder="ENTER ACCOUNT NUMER . . .">
+            </div><br>
+            <div>
+                <label for="w-amount"></label>
+                <input type="text" id="w-amount" name="w-amount" placeholder="ENTER DEPOSIT AMOUNT . . .">
+            </div><br>
+            <div>
+                <label for="pin"></label>
+                <input type="text" id="pin" name="pin" placeholder="ENTER YOUR PIN . . .">
+            </div>
+            <button id="button" type="submit">Deposit</button>
+            <button id="button" type="submit">Reset</button>
+
+           
+        </form>
+    </div>
+    <script src="./js.js"></script>
+
+</body>
+</html>

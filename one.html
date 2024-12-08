@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>KRS bank</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./one.html">Create account</a></li>
+            <li><a href="./two.html">Deposit</a></li>
+            <li><a href="./three.html">Withdraw</a></li>
+            <li><a href="./five.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <div class="you">
+        <form>
+            <h1>CREATE AN ACCOUNT</h1>
+            <div>
+                <label for="acc-no"></label>
+                <input type="text" id="acc-no" name="acc-no" placeholder="ENTER YOUR NAME . . .">
+            </div><br>
+            <div>
+                <label for="w-amount"></label>
+                <input type="text" id="w-amount" name="w-amount" placeholder="ENTER PAN NUMBER . . .">
+            </div><br>
+            <div>
+                <label for="pin"></label>
+                <input type="text" id="pin" name="pin" placeholder="ENTER YOUR MOBILE NUMBER . . .">
+            </div>
+            <button id="button" type="submit">Create Account</button>
+            <button id="button" type="submit">Reset</button>
+
+
+        </form>
+
+    </div>
+    </section>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+     
+        }
+        html{
+            background-image: url(./img/img5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            background-color: rgb(44, 79, 220);
+            height: 100px;
+        }
+        h2{
+            font-size: 30px;
+            color: white;
+        }
+        nav .logo h1 {
+            font-size: 39px;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: rgb(221, 239, 19);
+            font-size: 25px;
+            transition: color 0.3s ease;
+        }
+
+        nav .nav-links a:hover {
+            color: #2b27ad;
+        }
+        input {
+            height: 60px;
+            width: 55em;
+            margin-left: 1em;
+            background-color: beige;
+        } 
+
+        form {
+            text-align: center;
+            padding-left: 40%;
+        }
+::placeholder{
+    font-size: 20px;
+}
+        h1 {
+            color: beige;
+            margin-top: 150px;
+            margin-bottom: 80px;
+            font-size: 40px;
+        }
+
+        #button {
+            margin-top: 40px;
+            margin-right: 40px;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+</body>
+
+</html>
